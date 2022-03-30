@@ -1,2 +1,2 @@
 #!/bin/bash
-pwd Print the name of the current working directory
+ls List information about the files (the current directory by default)
