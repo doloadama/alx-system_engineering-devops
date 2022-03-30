@@ -1,2 +1,2 @@
 #!/bin/bash
-ls List information about the Files (the current directory by default) 
+ls List directory contents 
