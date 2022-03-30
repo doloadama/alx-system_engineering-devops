@@ -6,3 +6,4 @@ ls -l list files in the working directory in long format
 ls -la do not ignore entries starting with .
 ls -lna long format with user and group IDS displayed numerically and hidden files
 mkdir /tmp/my_first_directory
+rm -r delete a file or a directory
