@@ -11,4 +11,5 @@ rmdir remove a directory
 cd - change the working directory to the prvious one
 ls -al . .. /directory list the working directory, the parent directory and /boot directory all in long format
 file filename display the type of the file
-ln -s  target link : create a symbolic link to a defined target 
+ln -s  target link : create a symbolic link to a defined target
+cp *.html copy the html files 
