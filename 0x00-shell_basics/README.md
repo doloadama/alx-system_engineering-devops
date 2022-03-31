@@ -8,3 +8,5 @@ ls -lna long format with user and group IDS displayed numerically and hidden fil
 mkdir /tmp/my_first_directory
 rm -r delete a file or a directory
 rmdir remove a directory
+cd - change the working directory to the prvious one
+ls -al . .. /directory list the working directory, the parent directory and /boot directory all in long format
