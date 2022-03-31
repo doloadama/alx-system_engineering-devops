@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo temporarily become the superuser
+su temporarily become the superuser
