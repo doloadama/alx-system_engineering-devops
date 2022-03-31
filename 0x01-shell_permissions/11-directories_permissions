@@ -1,2 +1,2 @@
 #!/bin/bash
-chmode d755
+chmode -R 755
