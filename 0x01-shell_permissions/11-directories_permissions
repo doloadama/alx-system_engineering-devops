@@ -1,2 +1,2 @@
 #!/bin/bash
-chmode drwxr-xr-x 0x01-shell_permissions/
+chmode -R 755 0x01-shell_permissions/
