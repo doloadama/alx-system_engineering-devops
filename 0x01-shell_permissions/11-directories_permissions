@@ -1,2 +1,3 @@
 #!/bin/bash
-chmode d777
+chmode d755
+
