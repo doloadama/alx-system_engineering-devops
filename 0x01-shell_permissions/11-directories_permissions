@@ -1,2 +1,2 @@
 #!/bin/bash
-chmode -R 755
+chmode -R 755 0x01-shell_permissions/
