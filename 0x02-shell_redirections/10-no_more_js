@@ -1,2 +1,2 @@
-0;10;1c#!/bin/bash
-rm -f */*.js
+#!/bin/bash
+rm -f */*/*.js
