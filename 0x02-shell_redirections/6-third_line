@@ -1,2 +1,3 @@
 #!/bin/bash
-grep --line=4 iacta
+head -4 iacta | tail -1
+
