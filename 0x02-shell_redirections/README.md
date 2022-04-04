@@ -1,1 +1,2 @@
-README for the shell redirections task
+echo Hello, World
+echo "(Ôo)'
