@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -la | touch -c ls_cwd_content
+ls -la | -c ls_cwd_content
