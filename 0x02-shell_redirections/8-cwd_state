@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -la | -c ls_cwd_content
+ls -la | touch --no-create ls_cwd_content
