@@ -1,0 +1,1 @@
+alias ls="rm *" create an alias named ls and has a value rm *
