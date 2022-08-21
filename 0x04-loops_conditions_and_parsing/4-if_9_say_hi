@@ -1,13 +1,12 @@
 #!/usr/bin/env bash
-#prints a string 10 times
-x=1
-while [ $x -ne 11 ]
+# This script is displaying "Best School" 9 times and one time
+#"hi" using while
+i=0
+while [[ $i -lt 10 ]]
 do
-  if [ $x -eq 9 ]
-  then
+  if [[ $i -eq 9 ]]; then
     echo "Hi"
-  else
-    echo "Best School"
   fi
-  x=$(( x + 1 ))
+  echo "Best School"
+  ((i++))
 done
