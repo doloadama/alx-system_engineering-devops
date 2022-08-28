@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #Display all active IPV4 IPS on the machine
 
-ifconfig | grep "inet addr" | cut -d":" -f2 | cut -d " " -f1
+ifconfig | grep "inet addr" | cut -f2 -d " " | cut -f1 -d ":"
