@@ -1,4 +1,4 @@
-kk#!/usr/bin/env bash
+#!/usr/bin/env bash
 # Configures a ufw firewall to block all incoming traffic
 sudo apt-get install ufw
 sudo ufw disable
