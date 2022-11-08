@@ -1,2 +1,1 @@
-#!/bin/bash
-#My third repository
+README file
