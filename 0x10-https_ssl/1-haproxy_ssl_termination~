@@ -2,7 +2,7 @@ global
 	log /dev/log	local0
 	log /dev/log	local1 notice
 	chroot /var/lib/haproxy
-	stats socket /run/haproxy/admin.sock mode 660 level admin
+	stats socket /run/haproxy/admin.sock mode 660 level admin expose-fd listeners
 	stats timeout 30s
 	user haproxy
 	group haproxy
@@ -33,18 +33,19 @@ defaults
 	errorfile 503 /etc/haproxy/errors/503.http
 	errorfile 504 /etc/haproxy/errors/504.http
 
-frontend  ehoneah-frontend-http
-        bind *:80
-        mode http
+#--ayeniayodeji.tech-params-begin--
+frontend ayeniayodeji.tech-http-frontend
+	bind *:80
 	http-request set-header X-Forwarded-Proto http
-        default_backend ehoneah-backend
+	default_backend ayeniayodeji.tech-backend
 
-frontend ehoneah-frontend-https
-	bind *:443 ssl crt /etc/haproxy/certs/www.ehoneah.tech.pem
+frontend ayeniayodeji.tech-https-frontend
+	bind *:443 ssl crt /etc/ssl/ayeniayodeji.tech/ayeniayodeji.tech.pem
 	http-request set-header X-Forwarded-Proto https
-	default_backend ehoneah-backend
+	default_backend ayeniayodeji.tech-backend
 
-backend ehoneah-backend
-        balance roundrobin
-        server 63210-web-01 100.25.19.204:80 check
-        server 63210-web-02 54.157.159.85:80 check
+backend ayeniayodeji.tech-backend
+	balance roundrobin
+	server web01 34.73.0.174:80 check
+	server web02 35.196.78.105:80 check
+#--ayeniayodeji.tech-params-end--
