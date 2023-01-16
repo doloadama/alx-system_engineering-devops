@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-#connecting to my server using private key
-ssh ubuntu@3.236.66.50 -i ~/.ssh/school
+
+ssh -i ~/.ssh/school -o "StrictHostKeyChecking no" -o "IdentitiesOnly=yes" ubuntu@3.236.66.50
+

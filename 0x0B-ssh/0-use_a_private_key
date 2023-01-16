@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-
+#Connect to the server
 ssh -i ~/.ssh/school -o "StrictHostKeyChecking no" -o "IdentitiesOnly=yes" ubuntu@3.236.66.50
 
