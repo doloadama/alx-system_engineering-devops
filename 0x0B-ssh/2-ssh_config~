@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # Configure SSH configuration file
-Host 3.236.66.50
+Host 35.196.96.41
 IdentityFile ~/.ssh/school
 PasswordAuthentication no
-PubkeyAuthentication yes
