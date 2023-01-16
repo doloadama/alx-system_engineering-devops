@@ -1,4 +1,8 @@
-#!/usr/bin/env bash
-# Create an ssh key pair with betty as the passphrase
-# Number of bits = 4096
-ssh-keygen -t rsa -f school -b 4096 -N betty
+#!/bin/bash
+
+# Generate RSA key pair with 4096 bits and name school
+ssh-keygen -t rsa -b 4096 -f school -N "betty"
+
+# Print the location of the generated key pair
+echo "Private key: $(pwd)/school"
+echo "Public key: $(pwd)/school.pub"
